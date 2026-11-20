@@ -2,8 +2,12 @@
 
 ```sh
 brew install Nemet360/easytopaste/easytopaste
-easytopaste send "the thing you were about to paste into Slack"
+easytopaste --text "the thing you were about to paste into Slack"
 ```
+
+> The secret can also be piped in: `echo "…" | easytopaste`. There is no
+> `send` subcommand — the first version of this README invented one, and every
+> copy-pasted first command failed with exit 2.
 
 Share a password, an API key or a note through a **one-time link**. Your
 terminal encrypts it before anything leaves (AES-256-GCM); the key travels in
